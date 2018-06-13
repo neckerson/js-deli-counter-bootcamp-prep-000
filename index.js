@@ -14,6 +14,17 @@ function nowServing(katzDeliLine) {
   }
 }
 
+function nowServing(katzDeliLine) {
+  while (katzDeliLine.length > 0) {
+  return("Currently serving " + katzDeliLine[0] + ".")
+  }
+  katzDeliLine.shift()
+   
+  if (katzDeliLine.length === 0) {
+  return ("There is nobody waiting to be served!")
+}
+}
+
 function currentLine(katzDeliLine) {
   var newKatzDeliLine = []
     if (katzDeliLine.length >=1) {
